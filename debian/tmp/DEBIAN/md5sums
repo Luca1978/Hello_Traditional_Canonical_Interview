@@ -1,6 +1,6 @@
 e3b0a5ebd61679b41970b01de62f369a  usr/bin/hello
 d9cece93436564ffe46b0e7a9ef48055  usr/share/doc/hello-traditional/NEWS
-3fe76d5c3e3ce1fa354ba9b72591cd9e  usr/share/doc/hello-traditional/changelog.Debian.gz
+61b83c79c2a24ed3e2aeb86efd9faff1  usr/share/doc/hello-traditional/changelog.Debian.gz
 31aa50363c73b22626bd4e94faf90da2  usr/share/doc/hello-traditional/changelog.gz
 bf4bad78d5cf6787c6512b69f29be7fa  usr/share/doc/hello-traditional/copyright
 c5162d14d046d9808bf12adac2885473  usr/share/info/hello.info.gz
@@ -46,4 +46,4 @@ cb7d0a0764e3e99fc4e019d2c5a13407  usr/share/locale/th/LC_MESSAGES/hello.mo
 999427d7a8201686fe762b67ba46d5fa  usr/share/locale/vi/LC_MESSAGES/hello.mo
 3412236ad26b72a47a115d37f60a2035  usr/share/locale/zh_CN/LC_MESSAGES/hello.mo
 e01adda51cadfcb61eb3eb23adf94bb5  usr/share/locale/zh_TW/LC_MESSAGES/hello.mo
-29b51e7fcc9c18e989a69e7870af6ba2  usr/share/man/man1/hello.1.gz
+743c1956f6a5f1c5e0dda90840dce9a6  usr/share/man/man1/hello.1.gz

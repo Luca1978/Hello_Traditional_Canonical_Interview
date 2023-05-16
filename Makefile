@@ -143,7 +143,7 @@ build_triplet = x86_64-pc-linux-gnu
 host_triplet = x86_64-pc-linux-gnu
 bin_PROGRAMS = hello$(EXEEXT)
 am__append_1 = $(man_MANS)
-#am__append_2 = $(man_MANS)
+am__append_2 = $(man_MANS)
 DIST_COMMON = $(top_srcdir)/lib/local.mk $(srcdir)/lib/gnulib.mk \
 	$(top_srcdir)/doc/local.mk INSTALL NEWS README AUTHORS \
 	ChangeLog $(srcdir)/Makefile.in $(srcdir)/Makefile.am \
@@ -601,18 +601,18 @@ am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
 pkglibexecdir = ${libexecdir}/${PACKAGE}
-ACLOCAL = ${SHELL} /mnt/c/Lavoro/Canonical/hello-traditional-2.10/build-aux/missing aclocal-1.14
+ACLOCAL = ${SHELL} /mnt/c/Lavoro/Canonical/hello-traditional-2.10-6/build-aux/missing aclocal-1.14
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
 AR = ar
 ARFLAGS = cru
-AUTOCONF = ${SHELL} /mnt/c/Lavoro/Canonical/hello-traditional-2.10/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /mnt/c/Lavoro/Canonical/hello-traditional-2.10/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /mnt/c/Lavoro/Canonical/hello-traditional-2.10/build-aux/missing automake-1.14
+AUTOCONF = ${SHELL} /mnt/c/Lavoro/Canonical/hello-traditional-2.10-6/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /mnt/c/Lavoro/Canonical/hello-traditional-2.10-6/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /mnt/c/Lavoro/Canonical/hello-traditional-2.10-6/build-aux/missing automake-1.14
 AWK = mawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
-CFLAGS = -g -O2 -ffile-prefix-map=/mnt/c/Lavoro/Canonical/hello-traditional-2.10=. -fstack-protector-strong -Wformat -Werror=format-security -Wall
+CFLAGS = -g -O2 -ffile-prefix-map=/mnt/c/Lavoro/Canonical/hello-traditional-2.10-6=. -fstack-protector-strong -Wformat -Werror=format-security -Wall
 CONFIG_INCLUDE = config.h
 CPP = gcc -E
 CPPFLAGS = -Wdate-time -D_FORTIFY_SOURCE=2
@@ -1014,7 +1014,7 @@ HAVE_WMEMMOVE = 1
 HAVE_WMEMSET = 1
 HAVE__BOOL = 1
 HAVE__EXIT = 1
-HELP2MAN = ${SHELL} /mnt/c/Lavoro/Canonical/hello-traditional-2.10/build-aux/missing help2man
+HELP2MAN = ${SHELL} /mnt/c/Lavoro/Canonical/hello-traditional-2.10-6/build-aux/missing help2man
 INCLUDE_NEXT = include_next
 INCLUDE_NEXT_AS_FIRST_DIRECTIVE = include_next
 INSTALL = /usr/bin/install -c
@@ -1039,7 +1039,7 @@ LOCALE_ZH_CN = none
 LTLIBICONV = -liconv
 LTLIBINTL = 
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /mnt/c/Lavoro/Canonical/hello-traditional-2.10/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /mnt/c/Lavoro/Canonical/hello-traditional-2.10-6/build-aux/missing makeinfo
 MKDIR_P = /bin/mkdir -p
 MSGFMT = /usr/bin/msgfmt
 MSGFMT_015 = /usr/bin/msgfmt
@@ -1202,10 +1202,10 @@ WINDOWS_64_BIT_OFF_T = 0
 XGETTEXT = /usr/bin/xgettext
 XGETTEXT_015 = /usr/bin/xgettext
 XGETTEXT_EXTRA_OPTIONS =  --flag=error:3:c-format --flag=error_at_line:5:c-format
-abs_builddir = /mnt/c/Lavoro/Canonical/hello-traditional-2.10
-abs_srcdir = /mnt/c/Lavoro/Canonical/hello-traditional-2.10
-abs_top_builddir = /mnt/c/Lavoro/Canonical/hello-traditional-2.10
-abs_top_srcdir = /mnt/c/Lavoro/Canonical/hello-traditional-2.10
+abs_builddir = /mnt/c/Lavoro/Canonical/hello-traditional-2.10-6
+abs_srcdir = /mnt/c/Lavoro/Canonical/hello-traditional-2.10-6
+abs_top_builddir = /mnt/c/Lavoro/Canonical/hello-traditional-2.10-6
+abs_top_srcdir = /mnt/c/Lavoro/Canonical/hello-traditional-2.10-6
 ac_ct_CC = gcc
 am__include = include
 am__leading_dot = .
@@ -1237,7 +1237,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /mnt/c/Lavoro/Canonical/hello-traditional-2.10/build-aux/install-sh
+install_sh = ${SHELL} /mnt/c/Lavoro/Canonical/hello-traditional-2.10-6/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 lispdir = ${datarootdir}/emacs/site-lisp
@@ -2607,10 +2607,10 @@ uninstall-man: uninstall-man1
 	uninstall-man uninstall-man1 uninstall-pdf-am uninstall-ps-am
 
 
-#hello.1: hello
-#	$(HELP2MAN) --include=$(top_srcdir)/man/hello.x $(top_builddir)/hello -o $@-t
-#	chmod a=r $@-t
-#	mv -f $@-t $@
+hello.1: hello
+	$(HELP2MAN) --include=$(top_srcdir)/man/hello.x $(top_builddir)/hello -o $@-t
+	chmod a=r $@-t
+	mv -f $@-t $@
 
 # Verify that all source files using _() are listed in po/POTFILES.in.
 # The idea is to run this before making pretests, as well as official

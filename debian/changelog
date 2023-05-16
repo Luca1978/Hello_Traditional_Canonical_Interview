@@ -1,3 +1,9 @@
+hello-traditional (2.10-6) lunar; urgency=low
+
+  * Canonical Interview modifications
+
+ -- Luca Petrò <luca.petro@gmail.com>  Mon, 15 May 2023 14:41:00 +0100
+
 hello-traditional (2.10-5) unstable; urgency=medium
 
   * Use "Rules-Requires-Root: binary-targets" instead.

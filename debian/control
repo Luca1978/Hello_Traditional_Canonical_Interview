@@ -1,12 +1,12 @@
 Source: hello-traditional
 Section: devel
 Priority: optional
-Maintainer: Santiago Vila <sanvila@debian.org>
+Maintainer: Luca Petrò <luca.petro@gmail.com>
 Standards-Version: 4.3.0
 Homepage: http://www.gnu.org/software/hello/
 Rules-Requires-Root: binary-targets
 
-Package: hello-traditional
+Package: hello-traditional-canonical-interview
 Architecture: any
 Depends: ${shlibs:Depends}, dpkg (>= 1.15.4) | install-info
 Provides: hello

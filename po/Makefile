@@ -35,15 +35,15 @@ INSTALL_DATA = ${INSTALL} -m 644
 # Define $(MKDIR_P).
 # In automake <= 1.9.x, $(mkdir_p) is defined either as "mkdir -p --" or as
 # "$(mkinstalldirs)" or as "$(install_sh) -d". For these automake versions,
-# ${SHELL} /mnt/c/Lavoro/Canonical/hello-traditional-2.10/build-aux/install-sh does not start with $(SHELL), so we add it.
+# ${SHELL} /mnt/c/Lavoro/Canonical/hello-traditional-2.10-6/build-aux/install-sh does not start with $(SHELL), so we add it.
 # In automake >= 1.10, $(MKDIR_P) is derived from ${MKDIR_P}, which is defined
 # either as "/path/to/mkdir -p" or ".../install-sh -c -d". For these automake
 # versions, $(mkinstalldirs) and $(install_sh) are unused.
 # Gnulib provides a backport of autoconf 2.60's AC_PROG_MKDIR_P,
 # with a fix from autoconf 2.62 for interoperability with automake 1.9.6,
 # so use $(MKDIR_P) in the rest of this makefile.
-mkinstalldirs = $(SHELL) ${SHELL} /mnt/c/Lavoro/Canonical/hello-traditional-2.10/build-aux/install-sh -d
-install_sh = $(SHELL) ${SHELL} /mnt/c/Lavoro/Canonical/hello-traditional-2.10/build-aux/install-sh
+mkinstalldirs = $(SHELL) ${SHELL} /mnt/c/Lavoro/Canonical/hello-traditional-2.10-6/build-aux/install-sh -d
+install_sh = $(SHELL) ${SHELL} /mnt/c/Lavoro/Canonical/hello-traditional-2.10-6/build-aux/install-sh
 MKDIR_P = /bin/mkdir -p
 mkdir_p = $(MKDIR_P)
 
